@@ -2,10 +2,10 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/node-chrome:4.0.0-rc-1-prerelease-20210713
+FROM selenium/node-chrome:4.0.0-beta-3-20210802-djr
 LABEL authors=SeleniumHQ
 
-USER 1200
+USER 222
 
 #====================================
 # Scripts to run Selenium Standalone

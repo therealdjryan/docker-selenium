@@ -109,7 +109,7 @@ RUN chmod +x /dev/shm
 # Run the following commands as non-privileged user
 #===================================================
 
-USER 1200
+USER 222
 
 #==============================
 # Scripts to run Selenium Node and XVFB

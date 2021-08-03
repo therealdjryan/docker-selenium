@@ -20,7 +20,7 @@ RUN wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | apt-key add
 COPY wrap_edge_binary /opt/bin/wrap_edge_binary
 RUN /opt/bin/wrap_edge_binary
 
-USER 1200
+USER 222
 
 #============================================
 # Edge webdriver

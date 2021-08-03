@@ -44,12 +44,12 @@ RUN echo "${TZ}" > /etc/timezone \
 # Add normal user and group with passwordless sudo
 #========================================
 RUN groupadd seluser \
-         --gid 1201 \
+         --gid 66 \
   && useradd seluser \
          --create-home \
-         --gid 1201 \
+         --gid 66 \
          --shell /bin/bash \
-         --uid 1200 \
+         --uid 222 \
   && usermod -a -G sudo seluser \
   && echo 'ALL ALL = (ALL) NOPASSWD: ALL' >> /etc/sudoers \
   && echo 'seluser:secret' | chpasswd
@@ -81,7 +81,7 @@ RUN  mkdir -p /opt/selenium /opt/selenium/assets /var/run/supervisor /var/log/su
 #===================================================
 # Run the following commands as non-privileged user
 #===================================================
-USER 1200:1201
+USER 222:66
 
 
 CMD ["/opt/bin/entry_point.sh"]

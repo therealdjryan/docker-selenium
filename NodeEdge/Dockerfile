@@ -2,7 +2,7 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/node-base:4.0.0-rc-1-prerelease-20210713
+FROM selenium/node-base:4.0.0-beta-3-20210802-djr
 LABEL authors=SeleniumHQ
 
 USER root
@@ -27,7 +27,7 @@ RUN wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | apt-key add
 COPY wrap_edge_binary /opt/bin/wrap_edge_binary
 RUN /opt/bin/wrap_edge_binary
 
-USER 1200
+USER 222
 
 #============================================
 # Edge webdriver
